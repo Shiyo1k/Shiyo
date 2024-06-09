@@ -20,6 +20,11 @@ I am also interested in creating clones of popular apps and websites to understa
 - **Spotify Clone**
 - And more...
 
+### Extra
+Something that's unusual from what I make often.
+- **AI for the Games**
+- **Machine Learning**
+
 ## Contact
 Feel free to reach out to me for anything, or if you just want to be friends with me!
 
