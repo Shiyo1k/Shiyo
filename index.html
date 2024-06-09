@@ -20,6 +20,10 @@
         );
         background-repeat: no-repeat;
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
 
       h1 {
@@ -28,20 +32,23 @@
         font-size: 60px;
         line-height: 1em;
         margin: 0;
-        position: absolute;
         text-align: center;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
         letter-spacing: 3px;
         transition: 0.4s;
         text-shadow: 0 1px 0 #b8b8c8, 0 2px 0 #a0a0b0, 0 3px 0 #888898,
           0 4px 0 #707080, 0 5px 0 #585868, 0 6px 0 #404050, 0 7px 0 #282838,
           0 8px 0 #101020, 0 0 5px;
       }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
     </style>
   </head>
   <body>
+    <img src="image/filler.png" alt="Image" />
     <h1 id="coming-soon-text">Coming soon.</h1>
     <script>
       const textElement = document.getElementById("coming-soon-text");
