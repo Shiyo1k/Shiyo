@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  margin: 0;
+}
+
+nav {
+  width: 100%; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181717;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+
+.headertitle {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2vw;
+  color: #fff;
+  transition: 1s;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (max-width: 900px) {
+  .headertitle {
+    font-size: 20px;
+  }
+}
+
+.headertitlespan {
+  color: #c95a60;
+}
+
+.headertitle .headertitlespan {
+  transition: 1s;
+}
+
+.headertitle:hover {
+  color: rgba(255, 255, 255, 0);
+}
+
+.headertitle:hover .headertitlespan {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  text-shadow: 0 0 15px #c95a60;
+}
+
+@media (max-width: 900px) {
+  .headertitle {
+    font-size: 20px;
+    transition: none;
+  }
+  .headertitle:hover {
+    color: white;
+  }
+  .headertitle:hover .headertitlespan {
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    text-shadow: inherit;
+  }
+}
+
+.githubsquare {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-image: url("https://i.ibb.co/DRPwFM0/icons8-github-100-1.png");
+  background-size: cover;
+  transition: 0.2s;
+}
+
+.githubsquare:hover {
+  background-image: url("https://img.icons8.com/?size=100&id=12599&format=png&color=C95A60");
+  filter: drop-shadow(0 0 5px #c95a60);
+}
+
+.discordsquare {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-image: url("https://img.icons8.com/?size=100&id=30888&format=png&color=ffffff");
+  background-size: cover;
+  transition: 0.2s;
+}
+
+/*#d496fc*/
+.discordsquare:hover {
+  background-image: url("https://img.icons8.com/?size=100&id=30888&format=png&color=C95A60");
+  filter: drop-shadow(0 0 5px #c95a60);
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.card-container {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  top: 95px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background-color: #2e2e2e;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.card-container img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.card-container .text-content {
+  display: flex;
+  flex-direction: column;
+}

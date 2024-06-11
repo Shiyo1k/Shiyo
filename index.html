@@ -3,63 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Shiyo..?</title>
-    <link rel="icon" href="image/icon.jpeg" type="image/x-icon">
-    <style>
-      @import url("https://fonts.googleapis.com/css?family=Kanit:900");
-
-      body {
-        height: 100vh;
-        overflow: hidden;
-        background-image: linear-gradient(
-          to right top,
-          #1e1c22,
-          #25222a,
-          #2c2931,
-          #342f39,
-          #3c3641
-        );
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      h1 {
-        color: #fff;
-        font-family: "Kanit";
-        font-size: 60px;
-        line-height: 1em;
-        margin: 0;
-        text-align: center;
-        letter-spacing: 3px;
-        transition: 0.4s;
-        text-shadow: 0 1px 0 #b8b8c8, 0 2px 0 #a0a0b0, 0 3px 0 #888898,
-          0 4px 0 #707080, 0 5px 0 #585868, 0 6px 0 #404050, 0 7px 0 #282838,
-          0 8px 0 #101020, 0 0 5px;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="image/icon.jpeg" type="image/x-icon" />
+    <title>About Shiyo !</title>
   </head>
   <body>
-    <img src="image/filler.png" alt="Image" />
-    <h1 id="coming-soon-text">Coming soon.</h1>
-    <script>
-      const textElement = document.getElementById("coming-soon-text");
-      const texts = ["Coming soon.", "Coming soon..", "Coming soon..."];
-      let index = 0;
+    <div>
+      <nav>
+        <div>
+          <h1 class="headertitle">
+            Kyle <span class="headertitlespan">"Shiyo"</span> Nguyen
+          </h1>
+        </div>
+        <div class="icon-container">
+          <a
+            href="https://github.com/Shiyo1k"
+            target="_blank"
+            class="githubsquare"
+          ></a>
+          <a
+            href="https://discordapp.com/users/1052427231189807145"
+            target="_blank"
+            class="discordsquare"
+          ></a>
+        </div>
+      </nav>
+    </div>
 
-      setInterval(() => {
-        textElement.textContent = texts[index];
-        index = (index + 1) % texts.length;
-      }, 1000);
-    </script>
+    <div class="card-container">
+      <img src="https://avatars.githubusercontent.com/u/121048318?v=4" alt="Profile Picture" />
+      <div class="text-content">
+        <h1><span style="color: #c95a60">[DEV]</span> Shiyo</h1>
+        <p>hi im a real person you guys </p>
+      </div>
+    </div>
+
   </body>
 </html>
