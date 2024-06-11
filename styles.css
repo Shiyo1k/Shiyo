@@ -138,6 +138,12 @@ nav {
   margin-right: 20px;
 }
 
+@media (max-width: 542px) {
+  .card-container h1 {
+    font-size: 20px;
+  }
+}
+
 .card-container .text-content {
   display: flex;
   flex-direction: column;
